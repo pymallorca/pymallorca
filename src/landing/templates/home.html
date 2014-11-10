@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+
+{% block content %}
+  <div class="inner cover">
+    <img src="{% static 'img/logo-python.png' %}" />
+    <h1 class="cover-heading">PyMallorca</h1>
+    <p class="lead">¿Estás interesado en una asociación python en Mallorca?</p>
+      <p class="lead">Unos cuantos pythoneros estamos intentando organizarlo y de momento solo te pedimos que nos dejes tu email para ir informándote. </p>
+    <p class="lead">
+        <form method="post" action="/interesado/" role="form">
+        {% csrf_token %}
+        <div class="form-group">
+            <div class="col-sm-offset-2 col-sm-8">
+                <input type="email" class="form-control" id="email" name="email" placeholder="Introduce tu email">
+            </div>
+
+            <div class="col-sm-offset-2 col-sm-8" style="margin-top:20px;">
+                <button type="submit" class="btn btn-default">Enviar</button>
+            </div>
+        </div>
+        </form>
+
+    </p>
+  </div>
+{% endblock %}

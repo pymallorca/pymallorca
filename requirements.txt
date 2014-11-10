@@ -1,0 +1,17 @@
+Django==1.7
+argparse==1.2.1
+args==0.1.0
+configparser==3.3.0r2
+django-appconf==0.6
+django-braces==1.4.0
+django-compressor==1.4
+django-configurations==0.8
+django-crispy-forms==1.4.0
+django-extensions==1.4.0
+django-filter==0.8
+django-filters-mixin==0.1.2
+django-tables2==0.15.0
+psycopg2==2.5.4
+raven==5.0.0
+six==1.8.0
+wsgiref==0.1.2

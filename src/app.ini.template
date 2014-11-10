@@ -1,0 +1,33 @@
+[Base]
+APP_SLUG                = pymallorca
+
+[Paths]
+MEDIA_ROOT              = /tmp/pymallorca-media
+APP_ROOT                = /home/edu/Proyectos/pymallorca/src
+MEDIA_URL               = /media/
+STATIC_ROOT             = /tmp/pymallorca-static
+STATIC_URL              = /static/
+
+[Cache]
+REDIS_HOST              = localhost
+CACHE_TYPE              = redis
+CACHE_REDIS_DB          = 5
+REDIS_PORT              = 6379
+CACHE_MAX_ENTRIES       = 10000
+CACHE_TIMEOUT           = 3600
+CACHE_PREFIX            = pymallorca_
+
+[Logs]
+LOG_LEVEL               = INFO
+LOG_FILE                = /tmp/pymallorca.log
+SENTRY_DSN              =
+SENTRY_ENABLED          = False
+DJANGO_LOG_LEVEL        = ERROR
+
+[Security]
+SECRET_KEY              = new_key
+ALLOWED_HOSTS           = localhost
+
+[Debug]
+DEBUG                   = True
+DEBUG_THUMBNAIL         = True
