@@ -1,0 +1,51 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: 0.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2014-11-13 00:00+0100\n"
+"PO-Revision-Date: 2014-11-13 00:16+0100\n"
+"Last-Translator: Antoni Aloy <aaloy@apsl.net>\n"
+"Language-Team: ca <pymallorca@pycmalloca.com>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Poedit 1.5.4\n"
+"Language: ca\n"
+
+#: templates/base.html:9
+msgid "Pythoners de Mallorca"
+msgstr "Pythoners de Mallorca"
+
+#: templates/base.html:38
+msgid "Encuentra el código de esta web en"
+msgstr "Troba el codi d'aquesta web a"
+
+#: templates/base.html:38
+msgid "y colabora con lo que creas necesario"
+msgstr "i col·labora en el que trobis necessari"
+
+#: templates/home.html:8
+msgid "¿Estás interesado en una asociación Python en Mallorca?"
+msgstr "Estàs interessat en una associació Python a Mallorca?"
+
+#: templates/home.html:9
+msgid ""
+"Unos cuantos pythoneros estamos intentando organizarlo y de momento solo te "
+"pedimos que nos dejes tu email para ir informándote."
+msgstr ""
+"Uns quants Pythoners estam intentant organtizar-ho i de moment sols et "
+"demanam que ens deixis el teu e-mail per anar-te informant"
+
+#: templates/home.html:15
+msgid "Introduce tu email"
+msgstr "Introdueix el teu e-mail"
+
+#: templates/home.html:19
+msgid "Enviar"
+msgstr "Enviar"
