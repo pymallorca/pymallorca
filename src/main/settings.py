@@ -39,6 +39,7 @@ class Base(CachesMixin, DatabasesMixin, PathsMixin, LogsMixin, SecurityMixin,
         'django.middleware.common.CommonMiddleware',
         'django.middleware.csrf.CsrfViewMiddleware',
         'django.contrib.auth.middleware.AuthenticationMiddleware',
+        'django.middleware.locale.LocaleMiddleware',
         'django.contrib.messages.middleware.MessageMiddleware',
         'django.middleware.clickjacking.XFrameOptionsMiddleware',
     )
@@ -58,7 +59,11 @@ class Base(CachesMixin, DatabasesMixin, PathsMixin, LogsMixin, SecurityMixin,
 
     WSGI_APPLICATION = 'main.wsgi.application'
 
-    LANGUAGE_CODE = 'es'
+    LANGUAGES = (
+        ('ca', 'Català'),
+        ('es', 'Castellano'),
+    )
+    LANGUAGE_CODE = 'ca'
 
     gettext = lambda s: s
 
