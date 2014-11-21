@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-11-13 00:00+0100\n"
+"POT-Creation-Date: 2014-11-21 21:49+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -28,6 +28,22 @@ msgstr ""
 
 #: templates/base.html:38
 msgid "y colabora con lo que creas necesario"
+msgstr ""
+
+#: templates/gracias.html:8
+msgid "¡Gracias!"
+msgstr ""
+
+#: templates/gracias.html:9
+msgid "Te informaremos de los avances en organización"
+msgstr ""
+
+#: templates/gracias.html:10
+msgid "Novedades menores en"
+msgstr ""
+
+#: templates/gracias.html:10
+msgid " en twitter"
 msgstr ""
 
 #: templates/home.html:8

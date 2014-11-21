@@ -19,7 +19,8 @@ def gracias(request):
 
 class InteresadoView(View):
     def post(self, request, *args, **kwargs):
+        ctx = {}
         email = request.POST.get('email')
         i = Interesado(email=email)
         i.save()
-        return redirect('/gracias')
+        return render_to_response('gracias.html', ctx, RequestContext(request))

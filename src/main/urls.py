@@ -15,7 +15,7 @@ urlpatterns = patterns('',
 
 urlpatterns += i18n_patterns('',
     url(r'^', include(landing.urls)),
-        )
+)
 
 if settings.DEBUG:
     from django.contrib.staticfiles.urls import staticfiles_urlpatterns

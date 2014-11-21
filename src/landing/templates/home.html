@@ -8,7 +8,7 @@
 	<p class="lead">{% trans "¿Estás interesado en una asociación Python en Mallorca?" %}</p>
 	<p class="lead">{% trans "Unos cuantos pythoneros estamos intentando organizarlo y de momento solo te pedimos que nos dejes tu email para ir informándote." %} </p>
     <p class="lead">
-		<form method="post" action="{% url "interesado" %} role="form">
+		<form method="post" action="{% url "interesado" %}" role="form">
         {% csrf_token %}
         <div class="form-group">
             <div class="col-sm-offset-2 col-sm-8">
