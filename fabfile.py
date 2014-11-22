@@ -1,4 +1,4 @@
-from fabric.api import task, env, run, local, roles, cd, execute, hide, puts, sudo, abort
+from fabric.api import task, env, run, local, roles, cd, execute, hide, puts, sudo, abort, prefix
 import posixpath
 import re
 import fabtools
@@ -41,6 +41,7 @@ prod()
 @task
 def update():
     git_pull()
+    install_requirements()
     django('migrate')
     django('collectstatic --noinput')
     restart()
@@ -57,6 +58,12 @@ def django(command):
     env.user = env.user_app
     with cd(env.project_dir):
         run('django_execute {dj_command}'.format(dj_command=command, **env))
+
+def install_requirements():
+    env.user = env.user_app
+    with cd(env.project_codedir):
+        with prefix('workon %s' % env.user_app):
+            run('pip install -r requirements.txt')
 
 def git_pull():
     """
