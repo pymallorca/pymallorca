@@ -42,7 +42,7 @@ body {
   height: 100%; /* For at least Firefox */
   min-height: 100%;
   -webkit-box-shadow: inset 0 0 100px rgba(0,0,0,.5);
-          box-shadow: inset 0 0 100px rgba(0,0,0,.5);
+  box-shadow: inset 0 0 100px rgba(0,0,0,.5);
 }
 .site-wrapper-inner {
   display: table-cell;
@@ -125,6 +125,7 @@ body {
 .mastfoot {
   color: #999; /* IE8 proofing */
   color: rgba(255,255,255,.5);
+  margin-top:2em;
 }
 
 
@@ -139,8 +140,9 @@ body {
     top: 0;
   }
   .mastfoot {
-    position: fixed;
-    bottom: 0;
+    /* position: fixed; */
+    /* bottom: 0; */
+
   }
   /* Start the vertical centering */
   .site-wrapper-inner {
@@ -161,3 +163,27 @@ body {
     width: 700px;
   }
 }
+
+.lang a {
+  margin-right:1em;
+}
+
+.errorlist {
+  list-style:none;
+  color:#ff5252;
+  margin-top:1em;
+  margin-bottom:0;
+}
+
+#recaptcha_area {
+  margin:1em auto;
+}
+#captcha {
+  height:135px;
+  margin-bottom:1em;
+}
+
+form button {
+  margin-top:1em;
+}
+

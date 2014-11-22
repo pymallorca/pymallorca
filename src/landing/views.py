@@ -3,24 +3,20 @@
 from django.shortcuts import render_to_response
 from django.template import RequestContext
 from django.shortcuts import redirect
-from django.views.generic.base import View
+from django.views.generic import CreateView, TemplateView
+from django.core.urlresolvers import reverse_lazy
+
 from models import Interesado
+from forms import InteresadoForm
 
 
-def home(request):
-    ctx = {}
-    return render_to_response('home.html', ctx, RequestContext(request))
+class HomeView(CreateView):
+    template_name = 'home.html'
+    model = Interesado
+    form_class = InteresadoForm
+    success_url = reverse_lazy('gracias')
 
 
-def gracias(request):
-    ctx = {}
-    return render_to_response('gracias.html', ctx, RequestContext(request))
+class GraciasView(TemplateView):
+    template_name = 'gracias.html'
 
-
-class InteresadoView(View):
-    def post(self, request, *args, **kwargs):
-        ctx = {}
-        email = request.POST.get('email')
-        i = Interesado(email=email)
-        i.save()
-        return render_to_response('gracias.html', ctx, RequestContext(request))
