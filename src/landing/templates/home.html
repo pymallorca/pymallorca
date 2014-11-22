@@ -14,10 +14,12 @@
         <div class="col-sm-offset-2 col-sm-8">
           {{form.email.errors}}
           <input type="email" class="form-control" id="email" name="email" placeholder="{% trans "Introduce tu email" %}">
-          <div id="captcha">
+
+          <div id="captcha" style="margin: 20px;">
           {{form.captcha.errors}}
           {{form.captcha}}
           </div>
+
         </div>
 
         <div class="col-sm-offset-2 col-sm-8 btnsubmit">
