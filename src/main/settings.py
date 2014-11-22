@@ -26,6 +26,7 @@ class Base(CachesMixin, DatabasesMixin, PathsMixin, LogsMixin, SecurityMixin,
         'django_extensions',
         'apconf',
         'raven.contrib.django.raven_compat',
+        'captcha',
         'compressor',
         # 'crispy_forms',
         # 'django_tables2',
@@ -83,3 +84,9 @@ class Base(CachesMixin, DatabasesMixin, PathsMixin, LogsMixin, SecurityMixin,
     LOGIN_REDIRECT_URL = '/'
 
     SITE_ID = 1
+
+    # Captcha
+    RECAPTCHA_PUBLIC_KEY = opts.get("RECAPTCHA_PUBLIC_KEY",
+                                    "6Ld9r-cSAAAAAN5UTgUFF5G2U31AmltZJTYwRX11")
+    RECAPTCHA_PRIVATE_KEY = opts.get("RECAPTCHA_PRIVATE_KEY",
+                                     "6Ld9r-cSAAAAAE_ijhjnXtX8rFtlKj0Xrp2VNaOd")
