@@ -7,6 +7,7 @@
   <h1 class="cover-heading">PyMallorca</h1>
   <p class="lead">{% trans "¿Estás interesado en una asociación Python en Mallorca?" %}</p>
   <p class="lead">{% trans "Unos cuantos pythoneros estamos intentando organizarlo y de momento solo te pedimos que nos dejes tu email para ir informándote." %} </p>
+  <p class="lead">{% trans "Ya somos" %} <span style="color:#8FD56C;">{{number}} {% trans "pythoneros interesados" %}</span></p>
   <p class="lead">
     <form method="post" action="{% url "home" %}" role="form">
       {% csrf_token %}
