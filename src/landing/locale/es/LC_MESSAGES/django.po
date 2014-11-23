@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-11-21 21:49+0100\n"
+"POT-Creation-Date: 2014-11-23 20:39+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,15 +18,15 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: templates/base.html:9
+#: templates/base.html:8
 msgid "Pythoners de Mallorca"
 msgstr ""
 
-#: templates/base.html:38
+#: templates/base.html:42
 msgid "Encuentra el código de esta web en"
 msgstr ""
 
-#: templates/base.html:38
+#: templates/base.html:42
 msgid "y colabora con lo que creas necesario"
 msgstr ""
 
@@ -56,10 +56,18 @@ msgid ""
 "pedimos que nos dejes tu email para ir informándote."
 msgstr ""
 
-#: templates/home.html:15
+#: templates/home.html:10
+msgid "Ya somos"
+msgstr ""
+
+#: templates/home.html:10
+msgid "pythoneros interesados"
+msgstr ""
+
+#: templates/home.html:17
 msgid "Introduce tu email"
 msgstr ""
 
-#: templates/home.html:19
+#: templates/home.html:27
 msgid "Enviar"
 msgstr ""

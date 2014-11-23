@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: 0.1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-11-21 21:49+0100\n"
+"POT-Creation-Date: 2014-11-23 20:39+0100\n"
 "PO-Revision-Date: 2014-11-13 00:16+0100\n"
 "Last-Translator: Antoni Aloy <aaloy@apsl.net>\n"
 "Language-Team: ca <pymallorca@pycmalloca.com>\n"
@@ -18,15 +18,15 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Generator: Poedit 1.5.4\n"
 
-#: templates/base.html:9
+#: templates/base.html:8
 msgid "Pythoners de Mallorca"
 msgstr "Pythoners de Mallorca"
 
-#: templates/base.html:38
+#: templates/base.html:42
 msgid "Encuentra el código de esta web en"
 msgstr "Troba el codi d'aquesta web a"
 
-#: templates/base.html:38
+#: templates/base.html:42
 msgid "y colabora con lo que creas necesario"
 msgstr "i col·labora en el que trobis necessari"
 
@@ -58,10 +58,18 @@ msgstr ""
 "Uns quants Pythoners estam intentant organtizar-ho i de moment sols et "
 "demanam que ens deixis el teu e-mail per anar-te informant"
 
-#: templates/home.html:15
+#: templates/home.html:10
+msgid "Ya somos"
+msgstr "Ja som"
+
+#: templates/home.html:10
+msgid "pythoneros interesados"
+msgstr "pythoners interesats"
+
+#: templates/home.html:17
 msgid "Introduce tu email"
 msgstr "Introdueix el teu e-mail"
 
-#: templates/home.html:19
+#: templates/home.html:27
 msgid "Enviar"
 msgstr "Enviar"
