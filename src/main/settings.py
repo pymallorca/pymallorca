@@ -90,3 +90,5 @@ class Base(CachesMixin, DatabasesMixin, PathsMixin, LogsMixin, SecurityMixin,
                                     "6Ld9r-cSAAAAAN5UTgUFF5G2U31AmltZJTYwRX11")
     RECAPTCHA_PRIVATE_KEY = opts.get("RECAPTCHA_PRIVATE_KEY",
                                      "6Ld9r-cSAAAAAE_ijhjnXtX8rFtlKj0Xrp2VNaOd")
+
+    RECAPTCHA_USE_SSL = True
